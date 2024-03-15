@@ -10,7 +10,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
+      <ul className='list-disc pl-6'>
         <li>Aerial Silks</li>
         <li>Aerial Mini Hoop</li>
         <li>Lollipop</li>
@@ -25,7 +25,7 @@ const TAB_DATA = [
     title: "Experience",
     id: "experience",
     content: (
-      <ul>
+      <ul className='list-disc pl-6'>
         <li>Acrobatic Conundrum</li>
         <li>Up With a Twist!</li>
         <li>Chrysalis Circus</li>
@@ -58,15 +58,15 @@ const AboutSection = () => {
           priority={true}
           className=' border rounded-3xl border-gray-400'
         />
-        <div className='pt-4'>
+        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
           <h2 className=' text-2xl text-gray-400'>About Me</h2>
-          <p className='text-base sm:text-xl'>
+          <p className='text-base md:text-sm sm:text-xl'>
             Joining the circus was the best decision I ever made. I was accepted into SANCA's professional preparatory program in Seattle, WA and graduated
             in 2017. My life has been an ecstatic roller coaster ever since. I now coach and perform aerial, tumbling, handstands, and some object manipulation.
             I'm thrilled to continue creating pieces that feed my hunger for meaningful art and move the audiences that are witnessing these
             vulnerable creations.
           </p>
-          <div className='flex flex-row mt-8 gap-3'>
+          <div className='flex flex-row justify-start mt-8'>
             <TabButton 
               selectTab={() => handleTabChange("skills")} 
               active={tab === "skills"}>
