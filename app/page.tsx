@@ -1,5 +1,5 @@
 import HeroSection from "./components/HeroSectiont";
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import PerformanceSection from "./components/PerformanceSection";
 
