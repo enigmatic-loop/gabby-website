@@ -5,7 +5,13 @@ import React, { useTransition, useState }from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
 
-const TAB_DATA = [
+interface TabData {
+  title: string,
+  id: string,
+  content: React.JSX.Element
+}
+
+const TAB_DATA: TabData[] = [
   {
     title: "Skills",
     id: "skills",
