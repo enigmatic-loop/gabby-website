@@ -1,12 +1,12 @@
 import React from 'react'
 
-type Props = {
+type TabButtonProps = {
   active: boolean,
   selectTab: () => void,
   children?: any 
 }
 
-const TabButton: React.FC<Props> = ({ active, selectTab, children}) => {
+const TabButton: React.FC<TabButtonProps> = ({ active, selectTab, children}): JSX.Element => {
   const buttonClasses = active 
   ? 'text-white border-b-2 border-gray-200' 
   : 'text-gray-600'

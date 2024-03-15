@@ -29,7 +29,7 @@ const performanceData: PerformanceData[] = [
   },
 ]
 
-const PerformanceSection = () => {
+const PerformanceSection = (): JSX.Element => {
   return (
     <h2>{performanceData.map((project) => 
       <PerformanceCard key={project.id}

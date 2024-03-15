@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import AboutSection from "./components/AboutSection";
 import PerformanceSection from "./components/PerformanceSection";
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <main className="flex min-h-screen flex-col">
       <Navbar />

@@ -2,7 +2,7 @@ import React from 'react'
 import { PhotoIcon, VideoCameraIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
-type Props = {
+type PerformanceCardProps = {
   title: string,
   description: string 
   imgUrl: string | null,
@@ -12,7 +12,7 @@ type Props = {
 
 
 
-const PerformanceCard: React.FC<Props> = ({ imgUrl, title, description, morePhotosUrl, videoUrl }) => {
+const PerformanceCard: React.FC<PerformanceCardProps> = ({ imgUrl, title, description, morePhotosUrl, videoUrl }): JSX.Element => {
   return (
     <div>
       <div 

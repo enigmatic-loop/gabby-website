@@ -5,10 +5,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import NavLink from './NavLink'
 import MobileMenu from './MobileMenu';
 
-const navLinks: {
+interface NavLink {
   title: string,
   path: string
-}[] = [
+}
+
+const navLinks: NavLink[] = [
   {
     title: 'About',
     path: '#about'
@@ -23,7 +25,7 @@ const navLinks: {
   },
 ]
 
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
   const [navBarOpen, setNavBarOpen] = useState<boolean | null>();
 
   return (

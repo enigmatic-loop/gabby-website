@@ -43,7 +43,7 @@ const TAB_DATA: TabData[] = [
   }
 ]
 
-const AboutSection = () => {
+const AboutSection = (): JSX.Element => {
   const [tab, setTab] = useState('skills');
   const [isPending, startTransition] = useTransition();
 
