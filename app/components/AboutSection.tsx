@@ -33,10 +33,10 @@ const TAB_DATA: TabData[] = [
     content: (
       <ul className="list-disc pl-6">
         <li>Acrobatic Conundrum</li>
-        <li>Up With a Twist!</li>
+        <li>SANCA: Up With a Twist!</li>
         <li>Chrysalis Circus</li>
         <li>Animate Objects</li>
-        <li>Arcadia</li>
+        <li>The Cabiri</li>
         <li>Vuelta La Luna</li>
       </ul>
     ),
@@ -66,7 +66,7 @@ const AboutSection = (): JSX.Element => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className=" text-2xl text-gray-400">About Me</h2>
-          <p className="text-base md:text-sm sm:text-xl">
+          <p className="text-base md:text-xl sm:text-sm">
             Joining the circus was the best decision I ever made. I was accepted
             into SANCA's professional preparatory program in Seattle, WA and
             graduated in 2017. My life has been an ecstatic roller coaster ever
