@@ -80,7 +80,7 @@ const PerformanceSection = (): JSX.Element => {
 
   return (
     <section id='media'>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 md:max-w-fit">
+      <h2 className="text-center text-4xl font-bold text-white">
         Media
       </h2>
       <div className="flex flex-grid flex-wrap justify-center items-center gap-2 py-6">

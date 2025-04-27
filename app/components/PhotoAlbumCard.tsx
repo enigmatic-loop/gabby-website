@@ -24,7 +24,7 @@ const PhotoAlbumCard: React.FC<PhotoAlbumCardProps> = ({ albumTitle, coverPhoto,
     <section className='relative snap-center border rounded-md p-2.5'>
       <Link href={albumLink} target='_blank' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseEnter}>
         <h2 className='relate'>{albumTitle}</h2>
-        <div style={{ width: '25rem', height: '25rem', margin: '0 auto', maxWidth: '100%' }}>
+        <div className='w-64 h-64 mx-auto max-w-full'>
           <Image
             key={isHovered ? 'hovered' : 'not-hovered'}
             src={coverPhoto}
