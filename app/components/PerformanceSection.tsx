@@ -2,16 +2,16 @@
 
 import React from "react";
 import { useState } from "react";
-import PerformanceCard from "./PerformanceCard";
 import PerformanceTag from "./PerformanceTag";
+import VideoCard from "./VideoCard";
+import Link from "next/link";
+import PhotoAlbumSection from "./PhotoAlbumSection";
 
 interface PerformanceData {
   id: number;
   title: string;
   description: string;
-  image: string | null;
   tags: string[];
-  morePhotosUrl: string | null;
   videoUrl: string;
 }
 
@@ -19,20 +19,51 @@ const performanceData: PerformanceData[] = [
   {
     id: 1,
     title: "SANCA's Up with a Twist!",
-    description: "I did great",
-    image: "/images/gabby_aerial.jpg",
+    description: "Annual Fundraiser",
     tags: ["All", "Fabric"],
-    morePhotosUrl: null,
-    videoUrl: "https://www.youtube.com/watch?v=BciVTdmuaF0",
+    videoUrl: "https://www.youtube.com/embed/e5660LB4jJo?si=Qa-WBqEHZ9Jz292a",
   },
   {
     id: 2,
     title: "Acrobatic Conundrum",
-    description: "mwahahaha",
-    image: "/images/gabby_mini_hoop.JPG",
-    tags: ["All", "Lyra"],
-    morePhotosUrl: null,
-    videoUrl: "https://www.youtube.com/watch?v=BciVTdmuaF0",
+    description: "Thresholds",
+    tags: ["All", "Mini Hoop"],
+    videoUrl: "https://www.youtube.com/embed/u3ADDQF2FSc?si=I8mywXsYuZnVfPn9",
+  },
+  {
+    id: 3,
+    title: "Acrobatic Conundrum",
+    description: "Thresholds",
+    tags: ["All", "Fabric"],
+    videoUrl: "https://www.youtube.com/embed/1sy-WqTPFPE?si=qNBH8xnfBeMKVtTY",
+  },
+  {
+    id: 4,
+    title: "Acrobatic Conundrum",
+    description: "Thresholds",
+    tags: ["All", "Mini Hoop"],
+    videoUrl: "https://www.youtube.com/embed/EBGLOQBGLps?si=mUb345xknTju1lOa",
+  },
+  {
+    id: 5,
+    title: "Acrobatic Conundrum",
+    description: "Thresholds",
+    tags: ["All", "Silk Fans"],
+    videoUrl: "https://www.youtube.com/embed/3UKoMEf3vaY?si=ZP3xrcPp0zFAJzeN",
+  },
+  {
+    id: 5,
+    title: "Acrobatic Conundrum",
+    description: "Thresholds",
+    tags: ["All", "LED Buugeng"],
+    videoUrl: "https://www.youtube.com/embed/yLySfcNqMyU?si=w3MCbNvnjnl6h23g",
+  },
+  {
+    id: 5,
+    title: "Acrobatic Conundrum",
+    description: "Thresholds",
+    tags: ["Photo Albums"],
+    videoUrl: "https://photos.app.goo.gl/7wjmyHuCav9JhYv86",
   },
 ];
 
@@ -48,23 +79,24 @@ const PerformanceSection = (): JSX.Element => {
   );
 
   return (
-    <section>
+    <section id='media'>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        Performances
+        Media
       </h2>
       <div className=" flex flex-row justify-center items-center gap-2 py-6">
         <PerformanceTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
         <PerformanceTag onClick={handleTagChange} name="Fabric" isSelected={tag === "Fabric"} />
-        <PerformanceTag onClick={handleTagChange} name="Lyra" isSelected={tag === "Lyra"} />
+        <PerformanceTag onClick={handleTagChange} name="Mini Hoop" isSelected={tag === "Mini Hoop"} />
+        <PerformanceTag onClick={handleTagChange} name="Silk Fans" isSelected={tag === "Silk Fans"} />
+        <PerformanceTag onClick={handleTagChange} name="LED Buugeng" isSelected={tag === "LED Buugeng"} />
+        <PerformanceTag onClick={handleTagChange} name="Photo Albums" isSelected={tag === "Photo Albums"} />
       </div>
-      <div>
-        {filteredPerformances.map((performance, index) => (
-          <PerformanceCard
+      <div className="flex flex-grid flex-wrap justify-center items-center gap-10 py-6">
+        {tag === "Photo Albums" ? <PhotoAlbumSection />
+          : filteredPerformances.map((performance, index) => (
+          <VideoCard
             key={index}
             title={performance.title}
-            description={performance.description}
-            imgUrl={performance.image}
-            morePhotosUrl={performance.morePhotosUrl}
             videoUrl={performance.videoUrl}
           />
         ))}

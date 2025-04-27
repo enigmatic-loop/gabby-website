@@ -12,7 +12,7 @@ const PerformanceTag: React.FC<PerformanceTagProps> = ({ name, onClick, isSelect
     : "text-gray-500 border-slate-600 hover:border-white"
   return (
     <button 
-      className={`${buttonStyles} rounded-full border-2 border-purple-700 px-6 py-2 text-xl cursor-pointer`}
+      className={`${buttonStyles} rounded-full border-2 border-purple-700 px-6 py-2 lg:text-xl cursor-pointer md:text-sm`}
       onClick={() => onClick(name)}>
       {name}
     </button>
