@@ -6,31 +6,31 @@ const photoAlbumData = [
     albumTitle: 'Aerial Performances',
     coverPhoto: '/images/gabby_leiva_gods_of_the_night.JPG',
     albumLink: 'https://photos.app.goo.gl/7wjmyHuCav9JhYv86',
-    altText: 'Album 1',
+    altText: 'Aerial Performances',
   },
   {
     albumTitle: 'Silk Fans',
     coverPhoto: '/images/gabby_leiva_silk_fans.jpg',
     albumLink: 'https://photos.app.goo.gl/mGhZFaaYrCxSrHUS8',
-    altText: 'Album 2',
+    altText: 'Silk Fans',
   },
   {
     albumTitle: 'LED S-Staffs Buugeng',
     coverPhoto: '/images/gabby_leiva_s_staffs_buugeng.jpeg',
     albumLink: 'https://photos.app.goo.gl/TvCQycnDuu16gUgLA',
-    altText: 'Album 2',
+    altText: 'LED S-Staffs Buugeng',
   },
   {
     albumTitle: 'Lollipop',
     coverPhoto: '/images/gabby_leiva_lollipop.jpg',
     albumLink: 'https://photos.app.goo.gl/T97oSzTwj9vGD5fm6',
-    altText: 'Album 2',
+    altText: 'Lollipop',
   },
   {
     albumTitle: 'Headshots',
     coverPhoto: '/images/gabby_leiva_headshot.jpg',
     albumLink: 'https://photos.app.goo.gl/u646iC61KkyCoaEE7',
-    altText: 'Album 2',
+    altText: 'Headshots',
   },
 ];
 
