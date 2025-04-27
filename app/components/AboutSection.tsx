@@ -68,7 +68,7 @@ const AboutSection = (): JSX.Element => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className=" text-2xl text-gray-400">About</h2>
           <p className="text-base md:text-xl sm:text-sm">
-          Gabby grew up in southern California for most of her life. In 2016, she moved up to Seattle to run away with the circus. After graduating from SANCA’s Professional Preparatory Program in 2017, she moved forward to performing with companies such as Chrysalis Circus, Acrobatic Conundrum, Vuelta La Luna, and The Cabiri. She creates acts that utilizes the beauty of aerial, acrobatics, and flow arts as a medium for artistic expression. 
+            Gabby's movement journey started with seven years of gymnastics training from her youth into her adolescence. In 2016, she was accepted into SANCA's Professional Preparatory Program and moved up to Seattle to run away with the circus! After graduating from the program, she moved on to performing with companies such as Chrysalis Circus, Acrobatic Conundrum, Vuelta La Luna, The Cabiri, and many more. She creates acts that utilizes the beauty and strength of aerial, acrobatics, and flow arts as a medium for artistic expression. 
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
