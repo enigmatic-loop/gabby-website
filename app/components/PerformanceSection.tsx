@@ -80,10 +80,10 @@ const PerformanceSection = (): JSX.Element => {
 
   return (
     <section id='media'>
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 md:max-w-fit">
         Media
       </h2>
-      <div className=" flex flex-row justify-center items-center gap-2 py-6">
+      <div className="flex flex-grid flex-wrap justify-center items-center gap-2 py-6">
         <PerformanceTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
         <PerformanceTag onClick={handleTagChange} name="Fabric" isSelected={tag === "Fabric"} />
         <PerformanceTag onClick={handleTagChange} name="Mini Hoop" isSelected={tag === "Mini Hoop"} />

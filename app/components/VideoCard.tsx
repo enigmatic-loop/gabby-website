@@ -7,9 +7,9 @@ interface VideoCardProps {
 
 const VideoCard: React.FC<VideoCardProps> = ({ videoUrl, title }) => {
   return (
-    <div className="video-card">
+    <div className="video-card md:max-w-full">
       <iframe 
-        width="560" 
+        width="93%" 
         height="315" 
         src={videoUrl}
         title={title}
