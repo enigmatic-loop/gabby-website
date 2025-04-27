@@ -22,8 +22,8 @@ const TAB_DATA: TabData[] = [
         <li>Lollipop</li>
         <li>Tumbling</li>
         <li>Handstands</li>
-        <li>Buugeng (S Staff)</li>
         <li>Silk Fans</li>
+        <li>Buugeng (S Staff)</li>
       </ul>
     ),
   },
@@ -32,12 +32,13 @@ const TAB_DATA: TabData[] = [
     id: "experience",
     content: (
       <ul className="list-disc pl-6">
-        <li>Acrobatic Conundrum</li>
-        <li>SANCA: Up With a Twist!</li>
         <li>Chrysalis Circus</li>
-        <li>Animate Objects</li>
+        <li>Acrobatic Conundrum</li>
+        <li>Suite Lounge/Restaurant</li>
         <li>The Cabiri</li>
-        <li>Vuelta La Luna</li>
+        <li>EnJoy Productions</li>
+        <li>Space Oddity</li>
+        <li>Muse Movement Collective</li>
       </ul>
     ),
   },
@@ -54,7 +55,7 @@ const AboutSection = (): JSX.Element => {
   };
 
   return (
-    <section className="sm:pt-60 pt-5 ">
+    <section id='about' className="sm:pt-55 pt-5 ">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src={"/images/gabby_mini_hoop.JPG"}
@@ -65,15 +66,9 @@ const AboutSection = (): JSX.Element => {
           className=" border rounded-3xl border-gray-400"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className=" text-2xl text-gray-400">About Me</h2>
+          <h2 className=" text-2xl text-gray-400">About</h2>
           <p className="text-base md:text-xl sm:text-sm">
-            Joining the circus was the best decision I ever made. I was accepted
-            into SANCA's professional preparatory program in Seattle, WA and
-            graduated in 2017. My life has been an ecstatic roller coaster ever
-            since. I now coach and perform aerial, tumbling, handstands, and
-            some object manipulation. I'm thrilled to continue creating pieces
-            that feed my hunger for meaningful art and move the audiences that
-            are witnessing these vulnerable creations.
+          Gabby grew up in southern California for most of her life. In 2016, she moved up to Seattle to run away with the circus. After graduating from SANCA’s Professional Preparatory Program in 2017, she moved forward to performing with companies such as Chrysalis Circus, Acrobatic Conundrum, Vuelta La Luna, and The Cabiri. She creates acts that utilizes the beauty of aerial, acrobatics, and flow arts as a medium for artistic expression. 
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
