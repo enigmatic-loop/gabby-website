@@ -19,10 +19,6 @@ const navLinks: NavLink[] = [
     title: "Media",
     path: "#media",
   },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
 ];
 
 export const Navbar = (): JSX.Element => {
