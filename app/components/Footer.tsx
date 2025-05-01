@@ -19,7 +19,7 @@ function Footer() {
           </p>
       </div>
       <div className='flex items-center justify-between p-3'>
-        <Link href="https://www.instagram.com/guppygbby/?next=%2Ftranslastars%2F&hl=it">
+        <Link href="https://www.instagram.com/guppygbby/">
           <Image className='bg-white rounded-full border m-1' src={InstagramIcon} alt='Instagram Icon' width={35} height={35}/>
         </Link>
         <button type='button' onClick={() => router.push('mailto: gleiva967@gmail.com')}>
